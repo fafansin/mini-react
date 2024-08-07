@@ -9,12 +9,16 @@ const Login = () => {
   return (
   <Box p={2} sx={{display:'flex', justifyContent:"center", height:"100vh", alignItems:'center'}}>
     <Paper elevation={3} >
-      <Box p={2} maxWidth="sm">
+      <Box p={2}>
         <Typography align="center" variant="h3" component="span">Login <Typography variant="h3" component="h1" display="inline" color="primary">Chat</Typography></Typography>
         <Box 
-          sx={{'& .MuiTextField-root': { my: 1}, display:'flex', flexDirection: 'column', alignItems:'flex-start'}} 
+          sx={{
+            '& .MuiTextField-root': { my: 1}, 
+            display:'flex', 
+            flexDirection: 'column'}} 
           component="form" 
-          noValidate autoComplete="off" >
+          noValidate autoComplete="off"
+           >
             <TextField required id="username" label="User Name" size="small"/>
             <TextField required id="password" type="password" label="Password" size="small"/>
 
